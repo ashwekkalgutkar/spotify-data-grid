@@ -41,8 +41,8 @@ text
 
 ## Screenshots
 
-![Dashboard](https://via.placeholder.com/1200x800/1e293b/f9fafb?text=Spotify+Tracks+Dashboard)
-![Grid Features](https://via.placeholder.com/1200x400/f9fafb/ffffff?text=Filtering+Sorting+Export)
+![Dashboard](public\dashboard.png)
+<!-- ![Grid Features](https://via.placeholder.com/1200x400/f9fafb/ffffff?text=Filtering+Sorting+Export) -->
 
 ## Performance
 
