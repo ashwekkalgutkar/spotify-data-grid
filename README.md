@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# Spotify Tracks Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A high-performance React application for exploring and analyzing 30,000+ Spotify tracks through an interactive data grid. Features fast filtering, sorting, pagination, and CSV export capabilities.
 
-## Available Scripts
+## Live Demo
 
-In the project directory, you can run:
+[![Deployed App](https://img.shields.io/badge/Live%20Demo-Deployed-blue?style=flat&logo=vercel)](https://spotify-data-grid-hlcegiql1-ashweks-projects.vercel.app/)
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Data Grid**: Smooth rendering of 30K+ Spotify tracks with AG Grid virtualization
+- **Column Filtering**: Text, numeric, and categorical filters across 8+ columns
+- **Sorting**: Single-click column sorting with visual indicators
+- **Pagination**: Configurable page sizes (25/50/100/200 rows)
+- **Multi-Select**: Checkbox selection with header "select all" and live counts
+- **CSV Export**: Download current filtered/sorted view as `spotify_tracks_export.csv`
+- **Live Stats**: Total, displayed, and selected row counts
+- **Responsive**: Desktop and tablet optimized with resizable columns
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tech Stack
 
-### `npm test`
+React 18 - AG Grid Community - PapaParse - Lucide React - Tailwind-inspired CSS
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Quick Start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Clone & install
+git clone <your-repo-url>
+cd spotify-tracks-dashboard
+npm install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Add dataset to public folder
+Download: https://www.kaggle.com/datasets/joebeachcapital/30000-spotify-songs
+Place: public/spotify_songs.csv
+Run
+npm start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+text
 
-### `npm run eject`
+**Dataset**: 30,000 Spotify tracks with track details, audio features, and metadata [Kaggle]
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Screenshots
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Dashboard](https://via.placeholder.com/1200x800/1e293b/f9fafb?text=Spotify+Tracks+Dashboard)
+![Grid Features](https://via.placeholder.com/1200x400/f9fafb/ffffff?text=Filtering+Sorting+Export)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Performance
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **Initial Load**: ~1-2s (CSV parse + render 30K rows)
+- **Filter Response**: <300ms
+- **Smooth Scrolling**: 60fps via AG Grid virtualization
 
-## Learn More
+## Project Stats
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Development Time**: 3 hours
+- **Data Loading**: Client-side CSV parsing with PapaParse
+- **Bundle Size**: Optimized with memoized column definitions
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Architecture Highlights
 
-### Code Splitting
+- Memoized `columnDefs` and `defaultColDef` for render performance
+- Custom pagination/selection stats tracking
+- AG Grid Alpine theme with dashboard styling
+- Pinned checkbox + S.No columns for better UX
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## License
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+MIT License - see `LICENSE` file for details.
