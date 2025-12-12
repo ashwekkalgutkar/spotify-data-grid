@@ -4,7 +4,7 @@ A high-performance React application for exploring and analyzing 30,000+ Spotify
 
 ## Live Demo
 
-[![Deployed App](https://img.shields.io/badge/Live%20Demo-Deployed-blue?style=flat&logo=vercel)](https://spotify-data-grid-hlcegiql1-ashweks-projects.vercel.app/)
+[![Deployed App](https://img.shields.io/badge/Live%20Demo-Deployed-blue?style=flat&logo=vercel)](https://spotify-data-grid.netlify.app/)
 
 ## Features
 
